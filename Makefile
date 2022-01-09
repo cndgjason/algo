@@ -1,7 +1,11 @@
 list:
-	javac _List.java -d build
-	java -classpath build _List
+	rm -rf container/build
+	mkdir container/build
+	javac container/_List.java -d container/build
+	java -classpath container/build _List
 
 map:
-	javac _Map.java -d build
-	java -classpath build _Map
+	rm -rf container/build
+	mkdir container/build
+	javac container/_Map.java -d container/build
+	java -classpath container/build _Map
